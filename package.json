@@ -1,0 +1,11 @@
+{
+  "name": "montague",
+  "version": "0.0.0",
+  "description": "",
+  "dependencies": {
+    "redis":  "*",
+    "sockjs": "*"
+  },
+  "author": "",
+  "license": "ISC"
+}

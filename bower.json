@@ -1,0 +1,8 @@
+{
+  "name": "montague",
+  "dependencies": {
+    "foundation":       "latest",
+    "sockjs":           "latest",
+    "prelude-ls":       "latest"
+  }
+}
