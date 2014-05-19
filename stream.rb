@@ -1,21 +1,5 @@
 require 'redis'
-require 'slim'
-
-require 'ostruct'
-require 'pathname'
-require 'json'
-
-module UI
-  module Components
-  end
-end
-
-Dir['./ui/components/*.rb'].each { |file| require file }
-require './ui/router'
-
-def Object.const_missing name
-  const_get "UI::Components::#{name}"
-end
+require './ui/ui'
 
 router = UI::Router.new do
   page '/settings/book_source' do
