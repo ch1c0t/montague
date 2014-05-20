@@ -1,4 +1,5 @@
 rack:         bundle exec rackup
-stream:       bundle exec ruby stream.rb
-sock:         lsc stream.ls
-redis:        redis-server
+stream-rb:    bundle exec ruby stream.rb
+stream-ls:    lsc stream.ls
+redis-stream: redis-server --dir ./db/ --dbfilename stream.rdb
+redis-search: redis-server --dir ./db/ --dbfilename search.rdb --port 6380
