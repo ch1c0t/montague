@@ -6,7 +6,7 @@ router = UI::Router.new do
     id 'list', List.new
 
     on 'path' do |data|
-      update 'list', array: (data['input'].split '')
+      update 'list', input: data['input']
     end
   end
 end
